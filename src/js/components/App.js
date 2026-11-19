@@ -38,7 +38,7 @@ function App() {
         } else {
           error.text().then(errorMessage => {
             setError(true);
-            setErrorMessage(JSON.parse(errorMessage).error);
+            setErrorMessage(JSON.parse(errorMessage).detail);
             setIsLoading(false);
           })
         }
